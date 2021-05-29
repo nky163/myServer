@@ -1,0 +1,11 @@
+samba:
+    build: samba
+    environment:
+      USER: hnakaya
+      PASSWORD: password
+    ports:
+      - 139:139
+      - 445:445
+    volumes:
+      - /home/hnakaya:/home/hnakaya
+    mem_limit: 32m
